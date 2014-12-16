@@ -1,0 +1,31 @@
+.nav-builder {
+	.nav-builder--placeholder {
+		border: 1px solid #ccc;
+	}
+	.nav-builder--node {
+		display: block;
+		border: 1px solid #ccc;
+		.drag {
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			background: red;
+		}
+		.informal {
+			display: inline-block;
+			li {
+				display: inline-block;
+			}
+			label {
+				display: none;
+			}
+			input, select {
+				width: 200px;
+			}
+		}
+	}
+	.nav-builder--nodes {
+		padding: 12px 24px;
+		border: 1px dashed #ccc;
+	}
+}

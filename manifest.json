@@ -1,0 +1,63 @@
+{
+	"name": "Navigation",
+	"slug": "navigation",
+	"unit": "navigation",
+	"units": "navigations",
+
+	"rights": [
+		{
+			"key": "view",
+			"description": "View existing navigations"
+		},
+		{
+			"key": "create",
+			"description": "Create new navigations"
+		},
+		{
+			"key": "update",
+			"description": "Update existing navigations"
+		},
+		{
+			"key": "delete",
+			"description": "Remove navigations"
+		}
+	],
+
+	"formSpec": {
+		"method": "post",
+		"action": "/navigation/new",
+		"save": {},
+		"pager": {
+			"type": "tabbed",
+			"position": "top"
+		},
+		"pages": [
+			{
+				"groups": ["group1"]
+			}
+		],
+		"groups": {
+			"group1": {
+				"fields": ["name", "nodes"]
+			}
+		},
+		"fields": {
+			"name": {
+				"type": "text",
+				"label": "Name"
+			},
+			"nodes": {
+				"type": "nav_builder"
+			}
+		}
+	},
+
+	"listSpec": {
+		"fields": [
+			{
+				"name": "name",
+				"label": "Name"
+			}
+		]
+	}
+}
